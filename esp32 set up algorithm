@@ -1,0 +1,30 @@
+Working whit eps32 
+
+after complete install ESP-IDF 
+
+you lanuch ESP-IDF environment by check "Run ESP-IDF PowerShell Environment"
+
+then open the ESP-IDF PowerShell write next command for project named hello_world 
+
+cd %userprofille%\esp
+xcopy /e /i %IDF_PATH%\examples\get-started\hello_world hello_world
+
+then you connect the device to computer 
+
+now we should configure to our project by write next command 
+
+cd %userprofile%\esp\hello_world
+idf.py set-target esp32
+idf.py menuconfig
+
+then menu will apper to set up project specific variables then we write next command to build the project
+
+idf.py build 
+
+so the algorithm to start the esp32 is:
+
+1.ProjectName "hello-world"
+2.set-target esp32
+3.call menuconfig 
+4.call bulid 
+
